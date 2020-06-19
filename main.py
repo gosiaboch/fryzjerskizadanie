@@ -7,10 +7,6 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/services")
-def about():
-    return render_template("services.html")
-
 @app.route("/reservation")
 def reservation():
     return render_template("reservation.html")
